@@ -3,13 +3,17 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/fromage.jpg"/>
     <title>Apero Time</title>
     <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-    <span id="dateheure"></span>
-    <p id="joke"></p>
+    <center><h1>Is it Apero Time ?!</h1></center>
+<img src="images/26724.svg" class="bouteille" alt="fleur" />
+
+    <div id="dateheure"></div>
+    <div id="joke"></div>
     <script>
         function pause(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
@@ -41,10 +45,10 @@
             var minute = now.getMinutes();
             let blague = ["PAS PLUS HAUT QUE LE VERRE", "J'AI LE CIGARE AU BORD DES LÈVRES", "JE VAIS LUI CASSER LES PATTES ARRIÈRE", "T’ES GARÉE OÙ ?", "JE SUIS EN DOUBLE FILE",
                 "BELLE DESCENTE ! JE N’AIMERAI PAS ME LA FARCIR À VÉLO CELLE-LÀ !", "ENCORE UNE QUE LES BOCHES N’AURONT PAS", "FAIRE SPRINTER L'UNIJAMBISTE", "FAIS-MOI BAVER LA LIMACE"]
-            if (minute == 43) {
+            if (minute == 20) {
                 document.getElementById('joke').innerHTML = blague[0];
             }
-            else if (minute == 44) {
+            else if (minute == 21) {
                 document.getElementById('joke').innerHTML = blague[1];
             }
             else if (minute == 45) {
