@@ -6,11 +6,12 @@
     <link rel="shortcut icon" href="images/fromage.jpg"/>
     <title>Apero Time</title>
     <link rel="stylesheet" href="css.css">
+    <script src="snap.svg.js"></script>
 </head>
 
 <body>
     <center><h1>Is it Apero Time ?!</h1></center>
-<img src="images/26724.svg" class="bouteille" alt="fleur" />
+<img src="images/26724.svg" class="bouteille" alt="bouteille" />
 
     <div id="dateheure"></div>
     <div id="joke"></div>
@@ -43,9 +44,9 @@
             var now = new Date();
             var hour = now.getHours();
             var minute = now.getMinutes();
-            let blague = ["PAS PLUS HAUT QUE LE VERRE", "J'AI LE CIGARE AU BORD DES LÈVRES", "JE VAIS LUI CASSER LES PATTES ARRIÈRE", "T’ES GARÉE OÙ ?", "JE SUIS EN DOUBLE FILE",
-                "BELLE DESCENTE ! JE N’AIMERAI PAS ME LA FARCIR À VÉLO CELLE-LÀ !", "ENCORE UNE QUE LES BOCHES N’AURONT PAS", "FAIRE SPRINTER L'UNIJAMBISTE", "FAIS-MOI BAVER LA LIMACE"]
-            if (minute == 20) {
+            let blague = ["T’as une bonne descente j’aimerais pas la faire à vélo", "Santé, mais pas les pieds !", "Eh oh, on est à la bonne franquette hein", "Pastis par temps bleu, pastis merveilleux", "Oh la la on se calme, pas plus haut que le verre",
+                "Est-ce qu'il ferait pas soif ?", "J'ai le gosier asséché", "Encore un que les boches n'auront pas", "Je vais vider l'eau des olives"]
+            if (minute == 59) {
                 document.getElementById('joke').innerHTML = blague[0];
             }
             else if (minute == 21) {
@@ -76,7 +77,6 @@
                 document.getElementById('joke').innerHTML = "Le site est actuellement fermé. Revenez demain."
             }
         }
-
 
     </script>
 
