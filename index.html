@@ -11,10 +11,16 @@
 
 <body>
     <center><h1>Is it Apero Time ?!</h1></center>
-<img src="images/26724.svg" class="bouteille" alt="bouteille" />
+<!-- <img src="images/26724.svg" class="bouteille" alt="bouteille" /> -->
 
     <div id="dateheure"></div>
     <div id="joke"></div>
+
+    <div id="anim">
+    <object type="image/svg+xml" data="images/26724.svg">
+    </object>
+</div>
+
     <script>
         function pause(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
@@ -78,6 +84,13 @@
             }
         }
 
+        function animBouteille(){
+            var now = new Date();
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            if (minute == 15) {
+                document.getElementById('anim').innerHTML = blague[0];
+        }
     </script>
 
 <div class="beer"></div>
