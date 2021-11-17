@@ -7,14 +7,22 @@
 
    
    <defs>
+      <ref id="animation" param="animation" default="1"/>
+      <ref id="depart" param="depart" default="10%"/>
+   </defs>
+
+   <defs>
       <linearGradient id="bottle-fill" x1="0" y1="0" x2="0" y2="100%">
+
          <stop offset="0%" stop-opacity="0" stop-color="#420516">
             <animate id="start-fill" attributeName="offset" values="0;1" repeatCount="1" dur="30s" fill="freeze"/>
             <animate attributeName="stop-opacity" values="1" repeatCount="1" dur="30s" fill="freeze" />
          </stop>
+
          <stop offset="100%" stop-opacity="0" stop-color="#420516">
             <animate attributeName="offset" values="0;1" repeatCount="1" dur="30s" fill="freeze" />
          </stop>
+
       </linearGradient>
    </defs>
 
@@ -52,6 +60,8 @@
       -154 761 -194 822 -31 47 -99 73 -226 87 -89 10 -1322 23 -1419 15z"/>
    
    </g>
+
+   <!--<script type="text/ecmascript" xlink:href="https://dev.w3.org/SVG/modules/ref/master/ref2.js"></script>-->
 
 </svg>
 
