@@ -71,8 +71,9 @@ $.ajax({
         var now = new Date();
         var hour = now.getHours();
         var minute = now.getMinutes();
+        var item = cheers.countries[Math.floor(Math.random()*cheers.countries.length)];
 
-        document.getElementById('santé').innerHTML = "We say " + cheers.countries[2].spelling + " in " + cheers.countries[2].names[0] + " when we drink"
+        document.getElementById('santé').innerHTML = "We say " + " « " + item.spelling + " » "+ " in " + item.names[0] + " when we drink !" + "<br>Pronounce it this way: " + item.phonetics[0]
   
     }
   });
