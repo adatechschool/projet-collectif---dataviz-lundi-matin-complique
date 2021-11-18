@@ -42,6 +42,7 @@ const locations = async () => {
 }
 locations()
 
+/* not working
 function getLocation()
 {
   // Check whether browser supports Geolocation API or not
@@ -58,9 +59,4 @@ function getPosition(position)
       "Latitude: " + position.coords.latitude + "<br>" +
       "Longitude: " + position.coords.longitude;
 }
-
-if ("geolocation" in navigator) {
-  alert("la géolocalisation est disponible") 
-} else {
-  alert("la géolocalisation n'est pas disponible")
-}
+*/
