@@ -64,28 +64,6 @@ function getDateTime() {
     }
 }
 
-/*
-function expressionSanté(){
-    var now = new Date();
-    var hour = now.getHours();
-    var minute = now.getMinutes();
-    const cheers = JSON.parse("src = https://straw-tech.io/cheers.json");
-   
-}
-*/
-/*
-var requestURL = "https://straw-tech.io/cheers.json"
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-
-request.onload = function(){
-    var cheers = request.response;
-    populateHeader(cheers);
-    showHeroes(cheers);
-} */
-
 $.ajax({
     dataType: "json",
     url: "./cheers.json",
@@ -93,10 +71,8 @@ $.ajax({
         var now = new Date();
         var hour = now.getHours();
         var minute = now.getMinutes();
-        //let obj = JSON.parse(cheers)
 
-        document.getElementById('santé').innerHTML = cheers.countries[1].names[0];
-        //console.log(cheers.countries)
+        document.getElementById('santé').innerHTML = "We say " + cheers.countries[2].spelling + " in " + cheers.countries[2].names[0] + " when we drink"
   
     }
   });
