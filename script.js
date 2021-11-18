@@ -93,9 +93,10 @@ $.ajax({
         var now = new Date();
         var hour = now.getHours();
         var minute = now.getMinutes();
-        let obj = JSON.parse(cheers)
-    if (minute == 45){
-        document.getElementById('santé').innerHTML = obj[1];
-    }    
+        //let obj = JSON.parse(cheers)
+
+        document.getElementById('santé').innerHTML = cheers.countries[1].names[0];
+        //console.log(cheers.countries)
+  
     }
   });
