@@ -60,19 +60,3 @@ function getDateTime() {
     }
 }
 
-/*function animBouteille(){
-    var now = new Date();
-    var hour = now.getHours();
-    var minute = now.getMinutes();
-    if (minute == 15){
-        document.getElementById("anim").animate([
-        // keyframes
-        { transform: "translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="url(#bottle-fill)" stroke="#000000" stroke-width="200px" },
-        { transform: 'translateY(-300px)' }
-    ], {
-        // timing options
-        duration: 1000,
-        iterations: Infinity
-        });
-    }
-}*/
