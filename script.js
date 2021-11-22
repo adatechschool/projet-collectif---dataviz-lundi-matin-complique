@@ -38,40 +38,40 @@ function getDateTime() {
     let blague = ["T’as une bonne descente j’aimerais pas la faire à vélo", "Santé, mais pas des pieds !", "Eh oh, on est à la bonne franquette hein", "Pastis par temps bleu, pastis merveilleux", "Oh la la on se calme, pas plus haut que le verre",
         "Est-ce qu'il ferait pas soif ?", "J'ai le gosier asséché", "Encore un que les boches n'auront pas", "Je vais vider l'eau des olives", "Le cœur a ses raisons que le Ricard ignore", "Bière qui roule n'amasse pas mousse", "J'te mets la p'tite sœur ?"]
        
-        if (minute = 0) {
+        if (minute == 0) {
         document.getElementById('joke').innerHTML = blague[0];
     }
-    else if (minute = 5) {
+    else if (minute == 5) {
         document.getElementById('joke').innerHTML = blague[1];
     }
-    else if (minute = 10) {
+    else if (minute == 10) {
         document.getElementById('joke').innerHTML = blague[2];
     }
-    else if (minute = 15) {
+    else if (minute == 15) {
         document.getElementById('joke').innerHTML = blague[3];
     }
-    else if (minute = 20) {
+    else if (minute == 20) {
         document.getElementById('joke').innerHTML = blague[4];
     }
-    else if (minute = 25) {
+    else if (minute == 25) {
         document.getElementById('joke').innerHTML = blague[5];
     }
-    else if (minute = 30) {
+    else if (minute == 30) {
         document.getElementById('joke').innerHTML = blague[6];
     }
-    else if (minute = 35) {
+    else if (minute == 35) {
         document.getElementById('joke').innerHTML = blague[10];
     }
-    else if (minute = 40) {
+    else if (minute == 40) {
         document.getElementById('joke').innerHTML = blague[11];
     }
-    else if (minute = 45) {
+    else if (minute == 45) {
         document.getElementById('joke').innerHTML = blague[7];
     }
-    else if (minute = 50) {
+    else if (minute == 50) {
         document.getElementById('joke').innerHTML = blague[8];
     }
-    else if (minute = 55) {
+    else if (minute == 55) {
         document.getElementById('joke').innerHTML = blague[9];
     }
     else {
