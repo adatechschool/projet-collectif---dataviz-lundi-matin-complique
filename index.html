@@ -5,42 +5,68 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="images/fromage.png"/>
     <title>Apero Time</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css.css"> 
     <script src="snap.svg.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <ul> <!-- Buttons towards other pages -->
-        <div id="logo">
-            <button onclick="logo">
-                <a href="Map.html"><img src="images/boussole.png" alt="Fromage menu"><br>&nbsp;MAP</a>
-            </button> 
-        </div>
-
-        <div id="logo">
-            <button onclick="logo"><a href="qcm.html"><img src="images/icons8-alcoholic-beverage-licensing-100.png" alt="Qcm menu"><br>&nbsp;Quizzzz</a>
-            </button> 
-        </div>
-    </ul>
 
 </head>
 
 <body>
-    <center><h1>Is it Apero Time ?!</h1></center>
 
-    <div id="datehour"></div> <!-- Display of date and time -->
-    <div id="joke"></div> <!-- Display joke -->
-    <div id="santé"></div> <!-- Display how to say cheers in different languages --> 
-    <div id="anim"> <!-- Display animated image -->
-        <object type="image/svg+xml" data="images/26724.svg?animation=1&depart=25%"></object>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="Map.html"><img src="images/boussole.png" alt="Fromage menu">MAP</a>
+                <a class="nav-item nav-link" href="qcm.html"><img src="images/icons8-alcoholic-beverage-licensing-100.png" alt="Qcm menu">Quizzzz</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- <div class="beer"></div>
-<div class="glass"></div>
-<div class="bottle"></div> -->
+    <div class="container-fluid">
+
+        <div class="row m-3">
+            <h1 class="col text-center">Is it Apero Time ?!</h1>
+        </div>
+
+        <div class="row m-3">
+            <div class="col text-center" id="datehour"></div> <!-- Display of date and time -->
+        </div>
+
+        <div class="row m-5 text-center">
+            <div class="col-sm-3 text-center bg-warning" id="santé"></div> <!-- Display how to say cheers in different languages -->
+            <div class="col-sm-3 text-center bg-success" id="anim">
+                <!-- Display animated image -->
+                <object class="col-sm-3 text-center" type="image/svg+xml" data="images/26724.svg?animation=1&depart=25%"></object>
+            </div>
+            <div class="col-sm-3 text-center bg-danger" id="joke"></div> <!-- Display joke -->
+            
+        </div> <!-- div closes row -->
+
+    </div> <!-- Div closes container -->
+
 
     <script type="text/javascript" src="cheers.json"></script>
     <script src="script.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    
 </body>
 
 </html>
