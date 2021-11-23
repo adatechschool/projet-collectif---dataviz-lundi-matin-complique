@@ -10,12 +10,12 @@ body {
 
 #joke {
   text-align: right;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-#dateheure {
+#datehour {
   text-align: justify;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 img {
@@ -27,4 +27,14 @@ img {
 
 #customNavbar {
   background-color: #c9ccd5;
+}
+
+#santé {
+  font-size: 30px;
+}
+
+.question {
+  color: #30475E;
+  font-weight: bold;
+  font-size: 20px;
 }

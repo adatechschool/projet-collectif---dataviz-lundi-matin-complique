@@ -9,21 +9,28 @@
     <link rel="stylesheet" href="css.css">
     <title>All bars in France</title>    
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="images/fromage.png" alt="Fromage menu">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="Map.html"><img src="images/boussole.png" alt="Fromage menu">MAP</a>
-                <a class="nav-item nav-link" href="qcm.html"><img src="images/icons8-alcoholic-beverage-licensing-100.png" alt="Qcm menu">Quizzzz</a>
-            </div>
+
+<nav class="navbar navbar-expand-lg navbar-light" id="customNavbar">
+    <a class="navbar-brand" href="index.html"><img src="images/fromage.png" alt="Fromage menu">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="Map.html"><img src="images/boussole.png" alt="Fromage menu">Map</a>
+            <a class="nav-item nav-link" href="qcm.html"><img src="images/icons8-alcoholic-beverage-licensing-100.png"
+                    alt="Qcm menu">Quizzzz</a>
         </div>
-    </nav>
-    <p><center><u><FONT size="6pt"> Get drunk in French Bars!!!</FONT></u></center></p>
+    </div>
+</nav>
+
+<div class="row mb-5 mt-5">
+    <h1 class="col text-center"> Get drunk in French Bars!!!</h1>
+</div>
+
     <center>
         <iframe id="map" src="https://data.opendatasoft.com/explore/embed/dataset/osm-fr-bars@babel/map/?flg=fr&timezone=Europe%2FParis&location=17,48.87752,2.35113&basemap=jawg.streets&static=false&datasetcard=false&scrollWheelZoom=true" width="1350" height="640" frameborder="0">
         </iframe>

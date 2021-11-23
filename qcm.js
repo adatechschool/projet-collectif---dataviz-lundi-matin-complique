@@ -167,27 +167,27 @@ function generateQuiz(
       for (letter in questions[i].answers) {
         // ...add an html radio button
         answers.push(
-          "<label>" +
+          "<label>" + "&nbsp" +
             '<input type="radio" name="question' +
             i +
             '" value="' +
             letter +
-            '">' +
+            '">' + "&nbsp" +
             letter +
             ": " +
             questions[i].answers[letter] +
-            "</label>"
+            "</label>" + "&nbsp" 
         );
       }
 
       // add this question and its answers to the output
       output.push(
-        '<div class="question">' +
+        '<div class="question">' + 
           questions[i].question +
           "</div>" +
           '<div class="answers">' +
           answers.join("") +
-          "</div>"
+          "<br>" + "<br>" + "</div>"
       );
     }
 

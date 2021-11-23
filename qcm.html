@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/fromage.png"/>
+    <link rel="shortcut icon" href="images/fromage.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="qcm.css">
-    <title>Alcoholic Quizzzz</title>    
-<!--     <ul>
-        <div id="logo">
-            <button onclick="logo">
-                <a href="index.html"><img src="images/fromage.png" alt= "Fromage menu"><br>&nbsp;HOME</a>
-            </button> 
-         </div>
-    </ul> -->
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <title>Alcoholic Quizzzz</title>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Home</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="customNavbar">
+        <a class="navbar-brand" href="index.html"><img src="images/fromage.png" alt="Fromage menu">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="Map.html"><img src="images/boussole.png" alt="Fromage menu">MAP</a>
-                <a class="nav-item nav-link" href="qcm.html"><img src="images/icons8-alcoholic-beverage-licensing-100.png" alt="Qcm menu">Quizzzz</a>
+                <a class="nav-item nav-link" href="Map.html"><img src="images/boussole.png" alt="Fromage menu">Map</a>
+                <a class="nav-item nav-link" href="qcm.html"><img
+                        src="images/icons8-alcoholic-beverage-licensing-100.png" alt="Qcm menu">Quizzzz</a>
             </div>
         </div>
     </nav>
 
- <p><center><u><FONT size="6pt"> Welcome to the Alcohol Quizzzz!!!</FONT></u></center></p>
- <div id="quiz"></div>
- <button id="submit">Get Results</button>
- <div id="results"></div>
- <script src="qcm.js"></script>
+    <div class="row mb-5 mt-5">
+        <h1 class="col text-center">Welcome to the Alcohol Quizzzz!!!</h1>
+    </div>
+
+    <div class="row ml-5 d-flex justify-content-center">
+        <div class="col-5 text-left" id="quiz"></div>
+    </div>
+
+    <div class="row justify-content-center">
+        <button class="btn btn-dark text-center" id="submit">Get Results</button>
+    </div>
+
+    <div class="row justify-content-center" id="results"></div>
+
+    <script src="qcm.js"></script>
 </body>
+
 </html>
