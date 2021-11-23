@@ -5,18 +5,21 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="images/fromage.png"/>
     <title>Apero Time</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css.css"> 
     <script src="snap.svg.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
+    <ul> <!-- Buttons towards other pages -->
+        <div id="logo">
+            <button onclick="logo">
+                <a href="Map.html"><img src="images/boussole.png" alt="Fromage menu"><br>&nbsp;MAP</a>
+            </button> 
+        </div>
 
-    <ul><div id="logo"
-        <button onclick="logo"></button> <a href="Map.html"><img src="images/boussole.png" alt= "Fromage menu"><br>&nbsp;MAP</a>
-    </div>
-<p></p>
-    <div id="logo"
-    <button onclick="logo"></button> <a href="qcm.html"><img src="images/icons8-alcoholic-beverage-licensing-100.png" alt= "Qcm menu"><br>&nbsp;QCM</a>
-    </div>
+        <div id="logo">
+            <button onclick="logo"><a href="qcm.html"><img src="images/icons8-alcoholic-beverage-licensing-100.png" alt="Qcm menu"><br>&nbsp;QCM</a>
+            </button> 
+        </div>
     </ul>
 
 </head>
@@ -24,24 +27,20 @@
 <body>
     <center><h1>Is it Apero Time ?!</h1></center>
 
-    <div id="dateheure"></div>
-    <div id="joke"></div>
-    <div id="santé"></div>
-
-    <div id="anim">
-        <object type="image/svg+xml" data="images/26724.svg?animation=1&depart=25%">
-            <param name="depart" value="25%"/>
-        </object>
+    <div id="datehour"></div> <!-- Display of date and time -->
+    <div id="joke"></div> <!-- Display joke -->
+    <div id="santé"></div> <!-- Display how to say cheers in different languages --> 
+    <div id="anim"> <!-- Display animated image -->
+        <object type="image/svg+xml" data="images/26724.svg?animation=1&depart=25%"></object>
     </div>
 
-<div class="beer"></div>
+<!-- <div class="beer"></div>
 <div class="glass"></div>
-<div class="bottle"></div>
+<div class="bottle"></div> -->
 
-
+    <script type="text/javascript" src="cheers.json"></script>
+    <script src="script.js"></script>
 
 </body>
-<script type="text/javascript" src="cheers.json"></script>
-<script src="script.js"></script>
 
 </html>
