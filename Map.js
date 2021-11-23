@@ -1,3 +1,5 @@
+/* Codes written by Aurélie, Zineb, and Clément, but we can't the occasion to reuse them.
+
 let arrayCoordonneesGPS = []
 const locations = async () => {
   const response = await fetch(
