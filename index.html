@@ -16,7 +16,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light" id="customNavbar">
-        <a class="navbar-brand" href="#"><img src="images/fromage.png" alt="Fromage menu">Home</a>
+        <a class="navbar-brand" href="index.html"><img src="images/fromage.png" alt="Fromage menu">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,11 +44,16 @@
                 <!-- Display animated image -->
                 <object type="image/svg+xml" data="images/26724.svg?animation=1&depart=25%"></object>
             </div>
-            <div class="col-2 text-right" id="joke">
+            <div class="col-2 text-right">
+                <div class ="row" id="joke"></div>
+                <div class ="row mt-5">
+                <iframe id="source" src="" width="250" height="150" frameBorder="0" allowFullScreen></iframe></div>
+                <div class="row m-4 justify-content-md-center">
+                    <input class="btn btn-dark" id="button" type="button" value="Get drunk" onclick="buttonClickGET()" />
+                </div>
             </div> <!-- Display joke -->
-        <div class="row m-2 justify-content-md-center">
-            <iframe id="source" src="" width="480" height="231" frameBorder="0" allowFullScreen></iframe>
-        </div>
+        <!-- <div class="row m-2 justify-content-md-center">
+        </div> -->
         
         </div> <!-- div closes row -->
 

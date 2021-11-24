@@ -142,3 +142,11 @@ xhr.done(function(data) {
     $( "#source" ).attr( "src", data.data.embed_url);
     console.log("success got data", data);
 })
+
+function buttonClickGET() {
+  let xhr = $.get("https://api.giphy.com/v1/gifs/random?api_key=OiOKipuQjatG66Aa7HT68nzNzvop8KzY&tag=alcohol&rating=g");
+  xhr.done(function(data) {
+      $( "#source" ).attr( "src", data.data.embed_url);
+      console.log("success got data", data);
+  })
+}
