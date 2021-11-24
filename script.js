@@ -35,7 +35,7 @@ window.onload = (function () {
   getDateTime();
   window.setInterval(function () {
     getDateTime();
-  }, 1000);
+  }, 300000);
 })();
 
 // Cheers - same functionality as jokes but refreshes every 20 seconds and changes cheers everytime
@@ -65,35 +65,10 @@ function getDateTime() {
     "Bière qui roule n'amasse pas mousse",
     "J'te mets la p'tite sœur ?",
   ];
+  var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
 
-  if (minute == 0) {
-    document.getElementById("joke").innerHTML = jokes[0];
-  } else if (minute == 5) {
-    document.getElementById("joke").innerHTML = jokes[1];
-  } else if (minute == 10) {
-    document.getElementById("joke").innerHTML = jokes[2];
-  } else if (minute == 15) {
-    document.getElementById("joke").innerHTML = jokes[3];
-  } else if (minute == 20) {
-    document.getElementById("joke").innerHTML = jokes[4];
-  } else if (minute == 25) {
-    document.getElementById("joke").innerHTML = jokes[5];
-  } else if (minute == 30) {
-    document.getElementById("joke").innerHTML = jokes[6];
-  } else if (minute == 35) {
-    document.getElementById("joke").innerHTML = jokes[10];
-  } else if (minute == 40) {
-    document.getElementById("joke").innerHTML = jokes[11];
-  } else if (minute == 45) {
-    document.getElementById("joke").innerHTML = jokes[7];
-  } else if (minute == 50) {
-    document.getElementById("joke").innerHTML = jokes[8];
-  } else if (minute == 55) {
-    document.getElementById("joke").innerHTML = jokes[9];
-  } else {
-    document.getElementById("joke").innerHTML =
-      "Enough jokes for today! Come back tomorrow :-)";
-  }
+    document.getElementById("joke").innerHTML = randomJoke;
+
 }
 
 // Function that randomly selects a way to say cheers from a local JSON and display it in the HTML
@@ -105,8 +80,7 @@ function displayCheers(url, parametre, successCallBack) {
       var now = new Date();
       var hour = now.getHours();
       var minute = now.getMinutes();
-      var item =
-        cheers.countries[Math.floor(Math.random() * cheers.countries.length)];
+      var item = cheers.countries[Math.floor(Math.random() * cheers.countries.length)];
       var second = now.getSeconds();
       if (second % 60 == 0) {
         document.getElementById("santé").innerHTML =

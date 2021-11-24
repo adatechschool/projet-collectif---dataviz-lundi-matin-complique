@@ -28,7 +28,8 @@ We also added a quiz page with 15 funny questions to test your alcohol culture.
 - We managed to create an animated image with a svg file: we collected the image online and we were able to empty it and fill it automatically.
 - We managed to use an API from a opendata website that collects all bars in France.
 - We managed to use a local JSON file for the first time to display randomly cheers expressions in different languages (linked to the local time) with a time interval function. 
-- We managed to create a typeform-ish quiz on our dedicated page and to stock users' answers with a correction system that shows two different colors when it comes to the correct or wrong answer. 
+- We managed to create a typeform-ish quiz on our dedicated page and to stock users' answers with a correction system that shows two different colors when it comes to the correct or wrong answer.
+- We managed to implement a random GIF system when we click on the button. The GIF comes from the official API of GIPHY.com.
 
 ## What we couldn't do
 
