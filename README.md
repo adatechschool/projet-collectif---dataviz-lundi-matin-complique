@@ -23,7 +23,7 @@ We also added a quiz page with 15 funny questions to test your alcohol culture.
 - JQuery
 - JSON 
 - SVG
-
+- FileZilla
 
 ## What we did
 
@@ -32,6 +32,7 @@ We also added a quiz page with 15 funny questions to test your alcohol culture.
 - We managed to use a local JSON file for the first time to display randomly cheers expressions in different languages (linked to the local time) with a time interval function. 
 - We managed to create a typeform-ish quiz on our dedicated page and to stock users' answers with a correction system that shows two different colors when it comes to the correct or wrong answer.
 - We managed to implement a random GIF system when we click on the button. The GIF comes from the official API of GIPHY.com.
+- We managed to publish our website hosted by https://www.alwaysdata.com/fr/ 
 
 ## What we couldn't do
 
