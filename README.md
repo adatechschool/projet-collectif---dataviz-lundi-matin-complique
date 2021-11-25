@@ -1,7 +1,7 @@
 # projet-collectif---dataviz-lundi-matin-complique
 projet-collectif---dataviz-lundi-matin-complique created by GitHub Classroom
 
-For Ada Tech School students, If you want to check our website: http://192.168.4.14/aperoTime/
+If you want to check our website: http://aperotime.alwaysdata.net/
 
 **The name of the project: It's Apero Time!**
 **Contributors: Arthur GUISNE, Quentin LEE, Sarah WATREMET**
